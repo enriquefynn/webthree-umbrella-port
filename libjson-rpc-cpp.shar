@@ -1,0 +1,106 @@
+# This is a shell archive.  Save it in a file, remove anything before
+# this line, and then unpack it by entering "sh file".  Note, it may
+# create directories; files and directories will be owned by you and
+# have default permissions.
+#
+# This archive contains:
+#
+#	libjson-rpc-cpp
+#	libjson-rpc-cpp/pkg-descr
+#	libjson-rpc-cpp/Makefile
+#	libjson-rpc-cpp/distinfo
+#	libjson-rpc-cpp/pkg-plist
+#
+echo c - libjson-rpc-cpp
+mkdir -p libjson-rpc-cpp > /dev/null 2>&1
+echo x - libjson-rpc-cpp/pkg-descr
+sed 's/^X//' >libjson-rpc-cpp/pkg-descr << 'e8ea72a326554356fed732f1bbf1007f'
+XThis framework provides cross platform JSON-RPC (remote procedure call)
+X support for C++. It is fully JSON-RPC 2.0 & 1.0 compatible.
+X
+XWWW: https://github.com/cinemast/libjson-rpc-cpp
+e8ea72a326554356fed732f1bbf1007f
+echo x - libjson-rpc-cpp/Makefile
+sed 's/^X//' >libjson-rpc-cpp/Makefile << '32c8683488dbafba759a9e0ad6d589a9'
+X# Created by: Enrique Fynn <enriquefynn@gmail.com>
+X# $FreeBSD$
+X
+XPORTNAME=	libjson-rpc-cpp
+XPORTVERSION=	858c892
+XCATEGORIES=	devel
+X
+XMAINTAINER=	enriquefynn@gmail.com
+XCOMMENT=	C++ framework for json-rpc
+X
+XLICENSE=	MIT
+X
+XLIB_DEPENDS=	libmicrohttpd.so:www/libmicrohttpd\
+X		libargtable2.so:devel/argtable\
+X		libjsoncpp.so:devel/jsoncpp
+X
+XUSE_LDCONFIG=	yes
+XUSE_GITHUB=	yes
+XGH_ACCOUNT=	cinemast
+X
+XUSES=	cmake
+X
+X.include <bsd.port.mk>
+32c8683488dbafba759a9e0ad6d589a9
+echo x - libjson-rpc-cpp/distinfo
+sed 's/^X//' >libjson-rpc-cpp/distinfo << '4866bc125194d271bde36078922583ef'
+XSHA256 (cinemast-libjson-rpc-cpp-858c892_GH0.tar.gz) = bcab0b252384eb332edfff55ce7b8ee4f9cc7f2ec01384c50fe12034f01618ce
+XSIZE (cinemast-libjson-rpc-cpp-858c892_GH0.tar.gz) = 130433
+4866bc125194d271bde36078922583ef
+echo x - libjson-rpc-cpp/pkg-plist
+sed 's/^X//' >libjson-rpc-cpp/pkg-plist << '2b56eb94080611282da2e93cfa39dceb'
+Xinclude/jsonrpccpp/client.h
+Xinclude/jsonrpccpp/client/batchcall.h
+Xinclude/jsonrpccpp/client/batchresponse.h
+Xinclude/jsonrpccpp/client/client.h
+Xinclude/jsonrpccpp/client/connectors/httpclient.h
+Xinclude/jsonrpccpp/client/connectors/unixdomainsocketclient.h
+Xinclude/jsonrpccpp/client/iclientconnector.h
+Xinclude/jsonrpccpp/common/errors.h
+Xinclude/jsonrpccpp/common/exception.h
+Xinclude/jsonrpccpp/common/jsonparser.h
+Xinclude/jsonrpccpp/common/procedure.h
+Xinclude/jsonrpccpp/common/specification.h
+Xinclude/jsonrpccpp/common/specificationparser.h
+Xinclude/jsonrpccpp/common/specificationwriter.h
+Xinclude/jsonrpccpp/server.h
+Xinclude/jsonrpccpp/server/abstractserver.h
+Xinclude/jsonrpccpp/server/abstractserverconnector.h
+Xinclude/jsonrpccpp/server/connectors/httpserver.h
+Xinclude/jsonrpccpp/server/connectors/unixdomainsocketserver.h
+Xinclude/jsonrpccpp/server/iclientconnectionhandler.h
+Xinclude/jsonrpccpp/server/iprocedureinvokationhandler.h
+Xinclude/jsonrpccpp/server/requesthandlerfactory.h
+Xinclude/jsonrpccpp/stubgen/client/cppclientstubgenerator.h
+Xinclude/jsonrpccpp/stubgen/client/jsclientstubgenerator.h
+Xinclude/jsonrpccpp/stubgen/codegenerator.h
+Xinclude/jsonrpccpp/stubgen/helper/cpphelper.h
+Xinclude/jsonrpccpp/stubgen/server/cppserverstubgenerator.h
+Xinclude/jsonrpccpp/stubgen/servertemplate.h
+Xinclude/jsonrpccpp/stubgen/stubgenerator.h
+Xinclude/jsonrpccpp/stubgen/stubgeneratorfactory.h
+Xinclude/jsonrpccpp/stubgen/stubhelper.h
+Xinclude/jsonrpccpp/version.h
+Xlib/libjsonrpccpp-client.so
+Xlib/libjsonrpccpp-client.so.0
+Xlib/libjsonrpccpp-client.so.0.6.0
+Xlib/libjsonrpccpp-common.so
+Xlib/libjsonrpccpp-common.so.0
+Xlib/libjsonrpccpp-common.so.0.6.0
+Xlib/libjsonrpccpp-server.so
+Xlib/libjsonrpccpp-server.so.0
+Xlib/libjsonrpccpp-server.so.0.6.0
+Xlib/libjsonrpccpp-stub.so
+Xlib/libjsonrpccpp-stub.so.0
+Xlib/libjsonrpccpp-stub.so.0.6.0
+Xlib/pkgconfig/libjsonrpccpp-client.pc
+Xlib/pkgconfig/libjsonrpccpp-common.pc
+Xlib/pkgconfig/libjsonrpccpp-server.pc
+Xlib/pkgconfig/libjsonrpccpp-stub.pc
+2b56eb94080611282da2e93cfa39dceb
+exit
+

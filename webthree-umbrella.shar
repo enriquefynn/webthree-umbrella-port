@@ -1,0 +1,355 @@
+# This is a shell archive.  Save it in a file, remove anything before
+# this line, and then unpack it by entering "sh file".  Note, it may
+# create directories; files and directories will be owned by you and
+# have default permissions.
+#
+# This archive contains:
+#
+#	webthree-umbrella
+#	webthree-umbrella/pkg-descr
+#	webthree-umbrella/pkg-plist
+#	webthree-umbrella/distinfo
+#	webthree-umbrella/Makefile
+#
+echo c - webthree-umbrella
+mkdir -p webthree-umbrella > /dev/null 2>&1
+echo x - webthree-umbrella/pkg-descr
+sed 's/^X//' >webthree-umbrella/pkg-descr << 'c5e8ff332905c2ca8439948b43673dfa'
+XUmbrella repository with references to all of the components of cpp-ethereum,
+Xthe Ethereum C++ client built by the Ethereum Foundation.
+X
+XWWW: http://www.ethdocs.org/en/latest/ethereum-clients/cpp-ethereum
+c5e8ff332905c2ca8439948b43673dfa
+echo x - webthree-umbrella/pkg-plist
+sed 's/^X//' >webthree-umbrella/pkg-plist << '77aa36cfe1d4455ab9a929b8ec3b1c59'
+Xbin/bench
+Xbin/eth
+Xbin/ethkey
+Xbin/ethminer
+Xbin/ethrpctest
+Xbin/ethvm
+Xbin/lllc
+Xbin/rlp
+Xbin/solc
+Xinclude/devcore/Assertions.h
+Xinclude/devcore/Base58.h
+Xinclude/devcore/Base64.h
+Xinclude/devcore/Common.h
+Xinclude/devcore/CommonData.h
+Xinclude/devcore/CommonIO.h
+Xinclude/devcore/CommonJS.h
+Xinclude/devcore/Diff.h
+Xinclude/devcore/Exceptions.h
+Xinclude/devcore/FileSystem.h
+Xinclude/devcore/FixedHash.h
+Xinclude/devcore/Guards.h
+Xinclude/devcore/Hash.h
+Xinclude/devcore/Log.h
+Xinclude/devcore/MemoryDB.h
+Xinclude/devcore/OverlayDB.h
+Xinclude/devcore/RLP.h
+Xinclude/devcore/RangeMask.h
+Xinclude/devcore/SHA3.h
+Xinclude/devcore/Terminal.h
+Xinclude/devcore/TransientDirectory.h
+Xinclude/devcore/TrieCommon.h
+Xinclude/devcore/TrieDB.h
+Xinclude/devcore/TrieHash.h
+Xinclude/devcore/UndefMacros.h
+Xinclude/devcore/Worker.h
+Xinclude/devcore/concurrent_queue.h
+Xinclude/devcore/db.h
+Xinclude/devcore/debugbreak.h
+Xinclude/devcore/picosha2.h
+Xinclude/devcore/vector_ref.h
+Xinclude/devcrypto/AES.h
+Xinclude/devcrypto/Common.h
+Xinclude/devcrypto/CryptoPP.h
+Xinclude/devcrypto/ECDHE.h
+Xinclude/devcrypto/Exceptions.h
+Xinclude/devcrypto/SecretStore.h
+Xinclude/devcrypto/WordList.h
+Xinclude/ethash-cl/ethash_cl_miner.h
+Xinclude/ethash-cl/ethash_cl_miner_kernel.h
+Xinclude/ethashseal/Ethash.h
+Xinclude/ethashseal/EthashAux.h
+Xinclude/ethashseal/EthashCPUMiner.h
+Xinclude/ethashseal/EthashClient.h
+Xinclude/ethashseal/EthashGPUMiner.h
+Xinclude/ethashseal/EthashProofOfWork.h
+Xinclude/ethashseal/GenesisInfo.h
+Xinclude/ethcore/ABI.h
+Xinclude/ethcore/BasicAuthority.h
+Xinclude/ethcore/BlockHeader.h
+Xinclude/ethcore/ChainOperationParams.h
+Xinclude/ethcore/Common.h
+Xinclude/ethcore/CommonJS.h
+Xinclude/ethcore/Exceptions.h
+Xinclude/ethcore/ICAP.h
+Xinclude/ethcore/KeyManager.h
+Xinclude/ethcore/Precompiled.h
+Xinclude/ethcore/SealEngine.h
+Xinclude/ethcore/Transaction.h
+Xinclude/ethereum/Account.h
+Xinclude/ethereum/AccountDiff.h
+Xinclude/ethereum/All.h
+Xinclude/ethereum/BasicGasPricer.h
+Xinclude/ethereum/Block.h
+Xinclude/ethereum/BlockChain.h
+Xinclude/ethereum/BlockChainSync.h
+Xinclude/ethereum/BlockDetails.h
+Xinclude/ethereum/BlockQueue.h
+Xinclude/ethereum/CachedAddressState.h
+Xinclude/ethereum/ChainParams.h
+Xinclude/ethereum/Client.h
+Xinclude/ethereum/ClientBase.h
+Xinclude/ethereum/ClientTest.h
+Xinclude/ethereum/CommonNet.h
+Xinclude/ethereum/Defaults.h
+Xinclude/ethereum/EthereumHost.h
+Xinclude/ethereum/EthereumPeer.h
+Xinclude/ethereum/Executive.h
+Xinclude/ethereum/ExtVM.h
+Xinclude/ethereum/GasPricer.h
+Xinclude/ethereum/GenericFarm.h
+Xinclude/ethereum/GenericMiner.h
+Xinclude/ethereum/GenesisInfo.h
+Xinclude/ethereum/Interface.h
+Xinclude/ethereum/LogFilter.h
+Xinclude/ethereum/MiningClient.h
+Xinclude/ethereum/State.h
+Xinclude/ethereum/Transaction.h
+Xinclude/ethereum/TransactionQueue.h
+Xinclude/ethereum/TransactionReceipt.h
+Xinclude/ethereum/Utility.h
+Xinclude/ethereum/VerifiedBlock.h
+Xinclude/evmasm/Assembly.h
+Xinclude/evmasm/AssemblyItem.h
+Xinclude/evmasm/BlockDeduplicator.h
+Xinclude/evmasm/CommonSubexpressionEliminator.h
+Xinclude/evmasm/ConstantOptimiser.h
+Xinclude/evmasm/ControlFlowGraph.h
+Xinclude/evmasm/Exceptions.h
+Xinclude/evmasm/ExpressionClasses.h
+Xinclude/evmasm/GasMeter.h
+Xinclude/evmasm/Instruction.h
+Xinclude/evmasm/KnownState.h
+Xinclude/evmasm/LinkerObject.h
+Xinclude/evmasm/PathGasMeter.h
+Xinclude/evmasm/SemanticInformation.h
+Xinclude/evmasm/SourceLocation.h
+Xinclude/evmcore/EVMSchedule.h
+Xinclude/evmcore/Exceptions.h
+Xinclude/evmcore/Instruction.h
+Xinclude/libethereum/libevm/All.h
+Xinclude/libethereum/libevm/ExtVMFace.h
+Xinclude/libethereum/libevm/JitUtils.h
+Xinclude/libethereum/libevm/JitVM.h
+Xinclude/libethereum/libevm/SmartVM.h
+Xinclude/libethereum/libevm/VM.h
+Xinclude/libethereum/libevm/VMFace.h
+Xinclude/libethereum/libevm/VMFactory.h
+Xinclude/lll/All.h
+Xinclude/lll/CodeFragment.h
+Xinclude/lll/Compiler.h
+Xinclude/lll/CompilerState.h
+Xinclude/lll/Exceptions.h
+Xinclude/lll/Parser.h
+Xinclude/natspec/NatspecExpressionEvaluator.h
+Xinclude/p2p/All.h
+Xinclude/p2p/Capability.h
+Xinclude/p2p/Common.h
+Xinclude/p2p/Host.h
+Xinclude/p2p/HostCapability.h
+Xinclude/p2p/NodeTable.h
+Xinclude/p2p/Peer.h
+Xinclude/p2p/RLPXFrameCoder.h
+Xinclude/p2p/RLPXFrameReader.h
+Xinclude/p2p/RLPXFrameWriter.h
+Xinclude/p2p/RLPXPacket.h
+Xinclude/p2p/RLPXSocket.h
+Xinclude/p2p/RLPXSocketIO.h
+Xinclude/p2p/RLPxHandshake.h
+Xinclude/p2p/Session.h
+Xinclude/p2p/UDP.h
+Xinclude/p2p/UPnP.h
+Xinclude/scrypt/b64.h
+Xinclude/scrypt/crypto_scrypt-hexconvert.h
+Xinclude/scrypt/libscrypt.h
+Xinclude/scrypt/sha256.h
+Xinclude/scrypt/slowequals.h
+Xinclude/scrypt/sysendian.h
+Xinclude/solidity/AST.h
+Xinclude/solidity/ASTAnnotations.h
+Xinclude/solidity/ASTForward.h
+Xinclude/solidity/ASTJsonConverter.h
+Xinclude/solidity/ASTPrinter.h
+Xinclude/solidity/ASTUtils.h
+Xinclude/solidity/ASTVisitor.h
+Xinclude/solidity/AST_accept.h
+Xinclude/solidity/ArrayUtils.h
+Xinclude/solidity/AsmCodeGen.h
+Xinclude/solidity/AsmData.h
+Xinclude/solidity/AsmParser.h
+Xinclude/solidity/AsmStack.h
+Xinclude/solidity/Compiler.h
+Xinclude/solidity/CompilerContext.h
+Xinclude/solidity/CompilerStack.h
+Xinclude/solidity/CompilerUtils.h
+Xinclude/solidity/ConstantEvaluator.h
+Xinclude/solidity/ContractCompiler.h
+Xinclude/solidity/DeclarationContainer.h
+Xinclude/solidity/DocStringAnalyser.h
+Xinclude/solidity/DocStringParser.h
+Xinclude/solidity/Exceptions.h
+Xinclude/solidity/ExpressionCompiler.h
+Xinclude/solidity/GasEstimator.h
+Xinclude/solidity/GlobalContext.h
+Xinclude/solidity/InterfaceHandler.h
+Xinclude/solidity/LValue.h
+Xinclude/solidity/NameAndTypeResolver.h
+Xinclude/solidity/Parser.h
+Xinclude/solidity/ParserBase.h
+Xinclude/solidity/ReferencesResolver.h
+Xinclude/solidity/Scanner.h
+Xinclude/solidity/SourceReferenceFormatter.h
+Xinclude/solidity/SyntaxChecker.h
+Xinclude/solidity/Token.h
+Xinclude/solidity/TypeChecker.h
+Xinclude/solidity/Types.h
+Xinclude/solidity/Utils.h
+Xinclude/solidity/Version.h
+Xinclude/solidity/Why3Translator.h
+Xinclude/testutils/BlockChainLoader.h
+Xinclude/testutils/Common.h
+Xinclude/testutils/FixedClient.h
+Xinclude/testutils/StateLoader.h
+Xinclude/web3jsonrpc/AccountHolder.h
+Xinclude/web3jsonrpc/AdminEth.h
+Xinclude/web3jsonrpc/AdminEthFace.h
+Xinclude/web3jsonrpc/AdminNet.h
+Xinclude/web3jsonrpc/AdminNetFace.h
+Xinclude/web3jsonrpc/AdminUtils.h
+Xinclude/web3jsonrpc/AdminUtilsFace.h
+Xinclude/web3jsonrpc/Bzz.h
+Xinclude/web3jsonrpc/BzzFace.h
+Xinclude/web3jsonrpc/DBFace.h
+Xinclude/web3jsonrpc/Debug.h
+Xinclude/web3jsonrpc/DebugFace.h
+Xinclude/web3jsonrpc/Eth.h
+Xinclude/web3jsonrpc/EthFace.h
+Xinclude/web3jsonrpc/IpcServer.h
+Xinclude/web3jsonrpc/IpcServerBase.h
+Xinclude/web3jsonrpc/JsonHelper.h
+Xinclude/web3jsonrpc/LevelDB.h
+Xinclude/web3jsonrpc/MemoryDB.h
+Xinclude/web3jsonrpc/ModularServer.h
+Xinclude/web3jsonrpc/Net.h
+Xinclude/web3jsonrpc/NetFace.h
+Xinclude/web3jsonrpc/Personal.h
+Xinclude/web3jsonrpc/PersonalFace.h
+Xinclude/web3jsonrpc/SafeHttpServer.h
+Xinclude/web3jsonrpc/SessionManager.h
+Xinclude/web3jsonrpc/Test.h
+Xinclude/web3jsonrpc/TestFace.h
+Xinclude/web3jsonrpc/UnixSocketServer.h
+Xinclude/web3jsonrpc/Web3.h
+Xinclude/web3jsonrpc/Web3Face.h
+Xinclude/web3jsonrpc/Whisper.h
+Xinclude/web3jsonrpc/WhisperFace.h
+Xinclude/web3jsonrpc/WinPipeServer.h
+Xinclude/webthree/IPFS.h
+Xinclude/webthree/Support.h
+Xinclude/webthree/Swarm.h
+Xinclude/webthree/SystemManager.h
+Xinclude/webthree/WebThree.h
+Xinclude/whisper/BloomFilter.h
+Xinclude/whisper/Common.h
+Xinclude/whisper/Interface.h
+Xinclude/whisper/Message.h
+Xinclude/whisper/WhisperDB.h
+Xinclude/whisper/WhisperHost.h
+Xinclude/whisper/WhisperPeer.h
+Xlib/libdevcore.so
+Xlib/libdevcrypto.so
+Xlib/libethash-cl.so
+Xlib/libethash.so
+Xlib/libethashseal.so
+Xlib/libethcore.so
+Xlib/libethereum.so
+Xlib/libevm.so
+Xlib/libevmasm.so
+Xlib/libevmcore.so
+Xlib/liblll.so
+Xlib/libnatspec.so
+Xlib/libp2p.so
+Xlib/libscrypt.so
+Xlib/libsolidity.so
+Xlib/libtestutils.so
+Xlib/libweb3jsonrpc.so
+Xlib/libwebthree.so
+Xlib/libwhisper.so
+77aa36cfe1d4455ab9a929b8ec3b1c59
+echo x - webthree-umbrella/distinfo
+sed 's/^X//' >webthree-umbrella/distinfo << '604f9466bfd508194ef14575d8b004f6'
+XSHA256 (ethereum-webthree-umbrella-v1.2.9_GH0.tar.gz) = cfe256c008b6edc1036024d8510c1d5766ca24b1f309697b86f8080f85d0db6c
+XSIZE (ethereum-webthree-umbrella-v1.2.9_GH0.tar.gz) = 791985
+604f9466bfd508194ef14575d8b004f6
+echo x - webthree-umbrella/Makefile
+sed 's/^X//' >webthree-umbrella/Makefile << 'd1a8701ea19c39859eac7c2c14595859'
+X# Created by: Enrique Fynn <enriquefynn@gmail.com>
+X# $FreeBSD$
+X
+XPORTNAME=	webthree-umbrella
+XPORTVERSION=	1.2.9
+XDISTVERSIONPREFIX=	v
+XCATEGORIES=	net-p2p
+X
+XMAINTAINER=	enriquefynn@gmail.com
+XCOMMENT=	Umbrella project for the Ethereum C++ implementation
+X
+XLICENSE=	GPLv3
+X
+XLIB_DEPENDS=	libjsonrpccpp-common.so:devel/libjson-rpc-cpp\
+X		libjsoncpp.so:devel/jsoncpp\
+X		libgmp.so:math/gmp\
+X		libleveldb.so:databases/leveldb\
+X		libcryptopp.so:security/cryptopp\
+X		libminiupnpc.so:net/miniupnpc\
+X		libOpenCL.so:devel/ocl-icd
+X
+XBOOST_LIB_DEPENDS=	libboost_thread.so:devel/boost-libs\
+X		libboost_date_time.so:devel/boost-libs\
+X		libboost_system.so:devel/boost-libs\
+X		libboost_regex.so:devel/boost-libs\
+X		libboost_chrono.so:devel/boost-libs\
+X		libboost_filesystem.so:devel/boost-libs\
+X		libboost_unit_test_framework.so:devel/boost-libs\
+X		libboost_program_options.so:devel/boost-libs\
+X		libboost_random.so:devel/boost-libs\
+X		libboost_atomic.so:devel/boost-libs
+X
+XCC=clang38
+XCXX=clang++38
+X
+XUSE_GITHUB=	yes
+XGH_ACCOUNT=	ethereum
+X
+XUSES=	cmake:outsource
+X#Currently not supported by QT in freeBSD
+XCMAKE_ARGS=	-DGUI=false -DUSE_LD_GOLD=false
+X
+Xpost-extract:
+X	cd ${WRKSRC} &&\
+X	git init &&\
+X	git remote add origin\
+X	https://github.com/${GH_ACCOUNT}/${PORTNAME} &&\
+X	git fetch &&\
+X	git checkout -f tags/${DISTVERSIONPREFIX}${PORTVERSION} &&\
+X	git submodule init &&\
+X	git submodule update --recursive
+X
+X.include <bsd.port.mk>
+d1a8701ea19c39859eac7c2c14595859
+exit
+
